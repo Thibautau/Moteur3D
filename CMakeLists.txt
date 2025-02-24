@@ -39,7 +39,17 @@ find_package(Qt6 COMPONENTS Widgets REQUIRED)
 
 # Créer l'exécutable principal
 add_executable(Moteur3D src/main/main.cpp
-                        )
+        src/main/Data.h
+        src/main/Data.h
+        src/main/Mesh/Mesh.cpp
+        src/main/Mesh/Mesh.h
+        src/main/Mesh/IMesh.cpp
+        src/main/Mesh/IMesh.h
+        src/main/Math/Projection/Projection.cpp
+        src/main/Math/Projection/Projection.h
+        src/main/Math/Matrix/MatrixOperations.cpp
+        src/main/Math/Matrix/MatrixOperations.h
+)
 
 # Lier GoogleTest à l'exécutable de tests
 # target_link_libraries(runTests gtest gtest_main)
